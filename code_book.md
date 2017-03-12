@@ -22,8 +22,9 @@ For each record in the dataset it is provided:
 
 # Explanation of run_analysis.R
 
-  Download .zip file to working directory using download.file() function
+  Download .zip file to working directory 
   Unzip the .zip file
+  Set thw workind directory as the unzipped folder path
   Read the test and train dataset 
   Read acitivity labels
   Assign variable names
