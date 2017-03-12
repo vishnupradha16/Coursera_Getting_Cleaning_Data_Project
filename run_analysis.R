@@ -1,12 +1,7 @@
 # R Script "run_analysis.R"
 
-# Download .zip file and save to directory
-file_url <- "
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(file_url,destfile = "./R Workfiles/UCI_dataset.zip")
-
-#Unzip .zip file to directory using unzip() command
-unzip(zipfile="./R Workfiles/UCI_dataset.zip",exdir="./R Workfiles")
+# Set working directory to where I unzipped and saved the UCI dataset
+setwd("~/Documents/Data Science Coursera/R Workfiles/UCI HAR Dataset")
 
 # Read training dataset 
 x_train <- read.table("./R Workfiles/UCI_dataset/train/x_train.txt")
